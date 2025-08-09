@@ -17,7 +17,7 @@
 
 ```
 
-## 👋 Hi, I’m veerbot!
+## 👋 Hi, I’m suprateem-ux!
 
 - 🎓 Physics student, passionate about **classical mechanics** and **quantum field theory**
 - ♟️ Chess enthusiast & coder: building chess bots, engines, and working with Polyglot in Python
