@@ -23,7 +23,7 @@
 - ♟️ Chess enthusiast & coder: building chess bots, engines, and working with Polyglot in Python
 - 💻 Expert in **JavaScript**: full-stack app & game developer  
 - 🐍 Learning **Python**: especially for chess AI and engines
-- 🚀 Always exploring intersections between physics, code, and games!
+- 🚀 Always exploring intersections between code, and games!
 
 ### 🔥 Projects & Interests
 - **Chess Coding:** Chess bots, Polyglot book format, engine development in Python
