@@ -19,7 +19,7 @@
 
 ## 👋 Hi, I’m suprateem-ux!
 
-- 🎓 Physics student, passionate about **classical mechanics** and **quantum field theory**
+- Once a great chess player , now **sacrificed the skill for coding**
 - ♟️ Chess enthusiast & coder: building chess bots, engines, and working with Polyglot in Python
 - 💻 Expert in **JavaScript**: full-stack app & game developer  
 - 🐍 Learning **Python**: especially for chess AI and engines
@@ -28,8 +28,6 @@
 ### 🔥 Projects & Interests
 - **Chess Coding:** Chess bots, Polyglot book format, engine development in Python
 - **Game & App Dev:** Full-featured JavaScript apps and games
-- **Physics:** Classical mechanics, quantum field theory, simulations
-
 ---
 
 <!-- Badges section: add yours below! -->
