@@ -18,6 +18,9 @@
 ```
 
 ## 👋 Hi, I’m suprateem-ux!
+![PRs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/suprateem-ux/suprateem-ux/main/pr-badge.json)
+![Merged PRs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/suprateem-ux/suprateem-ux/main/merged-pr-badge.json)
+
 
 - Once a great chess player , now **sacrificed the skill for coding**
 - ♟️ Chess enthusiast & coder: building chess bots, engines, and working with Polyglot in Python
