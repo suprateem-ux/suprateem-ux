@@ -1,68 +1,30 @@
 name: Generate Shark GIF
 
 on:
-  schedule:
-    - cron: "0 0 * * *"   # once daily
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  build-gif:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.x"
 
-      - name: Install Pillow
-        run: pip install pillow requests
+      - name: Install dependencies
+        run: pip install pillow numpy
 
       - name: Generate Shark GIF
-        run: |
-          python <<'EOF'
-          from PIL import Image, ImageDraw
-          import math
+        run: python scripts/shark_gif.py
 
-          W, H = 400, 200
-          frames = []
-
-          for t in range(20):
-              img = Image.new("RGB", (W, H), "skyblue")
-              d = ImageDraw.Draw(img)
-
-              # water
-              d.rectangle([0, H//2, W, H], fill="blue")
-
-              # shark position (sin wave jump)
-              x = 50 + t*15
-              y = H//2 - int(50*math.sin(t/3))
-              d.ellipse([x-30, y-15, x+30, y+15], fill="gray")  # shark body
-              d.polygon([(x+30,y), (x+50,y-10), (x+50,y+10)], fill="gray")  # nose
-              d.polygon([(x-20,y-15), (x-35,y-40), (x-10,y-20)], fill="darkgray")  # fin
-
-              # splash when hitting water
-              if y >= H//2 - 5:
-                  d.arc([x-40, H//2-40, x+40, H//2+40], 0, 180, fill="white", width=3)
-
-              frames.append(img)
-
-          frames[0].save("shark.gif",
-                         save_all=True,
-                         append_images=frames[1:],
-                         duration=120,
-                         loop=0)
-          EOF
-
-      - name: Commit GIF
+      - name: Commit and push GIF
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add shark.gif
-          git commit -m "Update shark.gif" || echo "No changes to commit"
+          git commit -m "Update shark.gif"
           git push
