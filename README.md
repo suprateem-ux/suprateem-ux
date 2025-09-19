@@ -26,6 +26,7 @@
 ![Shark GIF](https://raw.githubusercontent.com/suprateem-ux/suprateem-ux/main/shark.gif)
 
 
+
 - Once a great chess player , now **sacrificed the skill for coding**
 - ♟️ Chess enthusiast & coder: building chess bots, engines, and working with Polyglot in Python
 - 💻 Expert in **JavaScript**: full-stack app & game developer  
