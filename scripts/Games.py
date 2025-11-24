@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-def download_lichess_games(username="SupratSa"):
+def download_lichess_games(username="supratsa"):
     url = f"https://lichess.org/api/games/user/{username}"
     params = {
         "tags": "true",
